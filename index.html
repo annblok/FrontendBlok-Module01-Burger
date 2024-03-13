@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="headerTop">
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo"></div>
@@ -45,12 +45,12 @@
                     <span>Cкидка</span>-30%
                 </h2>
                 <p class="banner-description">Только при&nbsp;покупке 3-х и более позиций, мы дарим скидку. Акции не&nbsp;суммируются.</p>
-                <button type="button" class="banner-btn">Купить сейчас</button>
+                <a href="#menuBurger" class="banner-btn">Купить сейчас</a>
             </div>
         </div>
     </section>
     <main>
-        <section>
+        <section id="menuBurger">
             <div class="container">
                 <div class="menu">
                     <div class="menu-header">
@@ -121,30 +121,36 @@
                     <div class="menu-header">
                         <h2 class="menu-title">Дополнительно</h2>
                     </div>
-                    <div class="menu-box">
-                        <div class="menu-item">
+                    <div class="menu-box _additionally">
+                        <div class="menu-item _additionally">
                             <div class="menu-thumb">
                                 <img src="images/menu/01-additionally.png" alt="Сэндвич">
                             </div>
-                            <h3 class="menu-name">Сэндвич</h3>
-                            <p class="menu-price">$26</p>
-                            <button type="button" class="menu-btn">Купить</button>
+                            <div class="menu-info">
+                                <h3 class="menu-name">Сэндвич</h3>
+                                <p class="menu-price">$26</p>
+                                <button type="button" class="menu-btn">Купить</button>
+                            </div>
                         </div>
-                        <div class="menu-item">
+                        <div class="menu-item _additionally">
                             <div class="menu-thumb">
                                 <img src="images/menu/02-additionally.png" alt="Сэндвич">
                             </div>
-                            <h3 class="menu-name">Картошка Фри</h3>
-                            <p class="menu-price">$26</p>
-                            <button type="button" class="menu-btn">Купить</button>
+                            <div class="menu-info">
+                                <h3 class="menu-name">Картошка Фри</h3>
+                                <p class="menu-price">$26</p>
+                                <button type="button" class="menu-btn">Купить</button>
+                            </div>
                         </div>
-                        <div class="menu-item">
+                        <div class="menu-item _additionally">
                             <div class="menu-thumb">
                                 <img src="images/menu/03-additionally.png" alt="Сэндвич">
                             </div>
-                            <h3 class="menu-name">Хот-Дог</h3>
-                            <p class="menu-price">$26</p>
-                            <button type="button" class="menu-btn">Купить</button>
+                            <div class="menu-info">
+                                <h3 class="menu-name">Хот-Дог</h3>
+                                <p class="menu-price">$26</p>
+                                <button type="button" class="menu-btn">Купить</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,6 +169,8 @@
                         <a href="#" class="footer-link">Методы оплаты</a>
                         <a href="contact.html" class="footer-link">Контакты</a>
                     </nav>
+                    <a class="footer-tel _mobile" href="tel:+79007871313">+ 7 900 787 13-13</a>
+                    <a class="footer-tel _mobile" href="tel:+79007001414">+ 7 900 700 14-14</a>
                 </div>
                 <div class="footer-item">
                     <h3 class="footer-title">Основная информация</h3>
@@ -185,5 +193,7 @@
             </div>
         </div>
     </footer>
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
